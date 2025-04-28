@@ -1,4 +1,4 @@
-require("vim-options")
-require("config.lazy")
+require('vim-options')
+require('config.lazy')
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme('catppuccin')

@@ -12,7 +12,7 @@ return {
     -- Automatically add pair of brackets
     --
     -- Examples:
-    -- - "(" automatically add ")"
+    -- - '(' automatically add ')'
     --      require('mini.pairs').setup()
     -- Add/delete/replace surroundings (brackets, quotes, etc.)
     --
