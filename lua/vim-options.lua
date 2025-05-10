@@ -63,6 +63,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 vim.keymap.set('v', '<leader>p', '"_dP')
 
+vim.keymap.set('n', ',m', ':%s/\r//g')
+
 -- INFO: Diverse
 
 -- highlight yanks
