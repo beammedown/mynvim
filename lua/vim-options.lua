@@ -22,7 +22,7 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
--- Keep signcolumn on by default
+-- Keep signcolumn on by default so it doesn't shift
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
