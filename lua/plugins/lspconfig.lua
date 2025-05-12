@@ -7,9 +7,10 @@ return {
       { 'williamboman/mason-lspconfig.nvim' },
       { 'WhoIsSethDaniel/mason-tool-installer.nvim' },
       {
-        'williamboman/mason.nvim',
+        'mason-org/mason.nvim',
         opts = {
           ui = {
+            check_outdated_packages_on_open = false,
             icons = {
               package_installed = '✓',
               package_pending = '➜',
