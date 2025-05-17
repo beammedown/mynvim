@@ -9,7 +9,7 @@ This is my personal Neovim config. I don't think it needs more explenation
 - [frizzbee](https://github.com/Saghen/blink.cmp/releases/latest) fuzzy finder for blink (optional, needs change in config)
 - Treesitter Cli
 - A C compiler
-- A Nerd Font (I use MesloLGM Nerd Font)
+- A Nerd Font (I use JetBrains Mono Nerd Font)
 - ripgrep
 - External languages like Golang or Python or whatever
 - TODO: FIND OTHERS

@@ -61,11 +61,14 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-vim.keymap.set('v', '<leader>p', '"_dP')
+vim.keymap.set('v', '<leader>p', '"_dP', { desc = 'Remove selection and paste from register' })
 
 vim.keymap.set('n', ',m', function()
   vim.cmd '%s/\r//g'
-end)
+end, { desc = 'Remove all \r from file when pasting from windows' })
+
+vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>')
+vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>')
 
 -- INFO: Diverse
 

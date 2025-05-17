@@ -200,7 +200,7 @@ return {
       completion = { documentation = { auto_show = false } },
       signature = { enabled = true },
       sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'lsp', 'snippets', 'path', 'buffer' },
       },
 
       fuzzy = { implementation = 'prefer_rust_with_warning' },

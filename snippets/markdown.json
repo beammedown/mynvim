@@ -1,0 +1,38 @@
+{
+  "alert": {
+    "prefix": "alert",
+    "body": [
+      "```alert\n  $0\n```"
+    ]
+  },
+  "warning": {
+    "prefix": "warning",
+    "body": [
+      "```warning\n  $0\n```"
+    ]
+  },
+  "info": {
+    "prefix": "info",
+    "body": [
+      "```info\n  $0\n```"
+    ]
+  },
+  "success": {
+    "prefix": "success",
+    "body": [
+      "```success\n  $0\n```"
+    ]
+  },
+  "mermaid": {
+    "prefix": "mermaid",
+    "body": [
+      "```mermaid\n  $0\n```"
+    ] 
+  },
+  "latex": {
+    "prefix": "latex",
+    "body": [
+      "\\$ ${0} \\$"
+    ] 
+  }
+}
