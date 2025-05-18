@@ -4,18 +4,21 @@ return {
     'rcarriga/nvim-dap-ui',
     'nvim-neotest/nvim-nio',
     'leoluz/nvim-dap-go',
+    'mfussenegger/nvim-dap-python',
   },
   config = function()
-    local dap = require('dap')
-    local dapui = require('dapui')
+    local dap = require 'dap'
+    local dapui = require 'dapui'
 
-    require('dap-go').setup({
+    require('dap-go').setup {
       delve = {
         -- On Windows delve must be run attached or it crashes.
         -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
-        detached = vim.fn.has('win32') == 0,
+        detached = vim.fn.has 'win32' == 0,
       },
-    })
+    }
+    require('dap-python').setup 'python3'
+
     require('dapui').setup()
 
     dap.listeners.before.attach.dapui_config = function()
@@ -34,6 +37,10 @@ return {
     vim.keymap.set('n', '<leader>dt', dap.toggle_breakpoint, { desc = '[D]ap [T]oggle Breakpoint' })
     vim.keymap.set('n', '<leader>dc', dap.continue, { desc = '[D]ap [C]ontinue' })
     vim.keymap.set('n', '<leader>dr', dap.restart, { desc = '[D]ap [R]estart' })
+    vim.keymap.set('n', '<leader>dq', function()
+      dap.terminate()
+      dapui.close()
+    end, { desc = '[D]ap [Q]uit' })
 
     vim.api.nvim_set_hl(0, 'DapBreak', { fg = '#e51400' })
     vim.api.nvim_set_hl(0, 'DapStop', { fg = '#ffcc00' })
@@ -52,6 +59,7 @@ return {
         LogPoint = '◆',
         Stopped = '⭔',
       }
+
     for type, icon in pairs(breakpoint_icons) do
       local tp = 'Dap' .. type
       local hl = (type == 'Stopped') and 'DapStop' or 'DapBreak'
