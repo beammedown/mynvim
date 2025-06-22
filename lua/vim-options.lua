@@ -5,6 +5,9 @@ vim.g.have_nerd_font = true
 
 -- INFO: VIM OPTs
 
+-- Enable mouse mode, can be useful for resizing splits for example!
+vim.opt.mouse = 'a'
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
