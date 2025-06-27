@@ -67,8 +67,8 @@ vim.keymap.set('n', ',m', function()
   vim.cmd '%s/\r//g'
 end, { desc = 'Remove all \r from file when pasting from windows' })
 
-vim.keymap.set('n', '<M-j>', '<cmd>cnext<CR>')
-vim.keymap.set('n', '<M-k>', '<cmd>cprev<CR>')
+vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>')
+vim.keymap.set('n', '<M-p>', '<cmd>cprev<CR>')
 
 -- INFO: Diverse
 
