@@ -1,11 +1,34 @@
 return {
-  'stevearc/oil.nvim',
-  ---@module 'oil'
-  ---@type oil.SetupOpts
-  opts = {},
+  {
+    'refractalize/oil-git-status.nvim',
 
-  -- Optional dependencies
-  dependencies = { { 'nvim-tree/nvim-web-devicons', opts = {} } },
+    dependencies = {
+      'stevearc/oil.nvim',
+    },
 
-  lazy = false,
+    config = true,
+  },
+  {
+    'JezerM/oil-lsp-diagnostics.nvim',
+    dependencies = { 'stevearc/oil.nvim' },
+    opts = {},
+  },
+  {
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {
+      win_options = {
+        signcolumn = 'yes:2',
+      },
+      view_options = {
+        show_hidden = true,
+      },
+    },
+
+    -- Optional dependencies
+    dependencies = { { 'nvim-tree/nvim-web-devicons', opts = {} } },
+
+    lazy = false,
+  },
 }

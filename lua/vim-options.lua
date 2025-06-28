@@ -70,6 +70,8 @@ end, { desc = 'Remove all \r from file when pasting from windows' })
 vim.keymap.set('n', '<M-n>', '<cmd>cnext<CR>')
 vim.keymap.set('n', '<M-p>', '<cmd>cprev<CR>')
 
+vim.keymap.set('n', '-', '<cmd>Oil<CR>', { desc = 'Open Oil.nvim' })
+
 -- INFO: Diverse
 
 -- highlight yanks
