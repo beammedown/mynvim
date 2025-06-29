@@ -27,12 +27,12 @@
     "prefix": "mermaid",
     "body": [
       "```mermaid\n  $0\n```"
-    ] 
+    ]
   },
   "latex": {
     "prefix": "latex",
     "body": [
       "\\$ ${0} \\$"
-    ] 
+    ]
   }
 }

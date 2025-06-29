@@ -1,0 +1,20 @@
+{
+  "Theme": {
+    "prefix": "Theme",
+    "body": [
+      "Theme.of(context).$0"
+    ]
+  },
+  "Themeof": {
+    "prefix": "to",
+    "body": [
+      "Theme.of(context).colorScheme.$0"
+    ]
+  },
+  "MediaQuery": {
+    "prefix": "mq",
+    "body": [
+      "MediaQuery.of(context).size.$0"
+    ]
+  }
+}

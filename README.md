@@ -11,6 +11,7 @@ This is my personal Neovim config. I don't think it needs more explenation
 - A C compiler
 - A Nerd Font (I use JetBrains Mono Nerd Font)
 - ripgrep
+- fd
 - External languages like Golang or Python or whatever
 - TODO: FIND OTHERS
 
@@ -31,7 +32,7 @@ sudo rm -rf ~/.config/nvim && git clone git@github.com:beammedown/mynvim.git "${
 
 Powershell using ssh
 ```zsh
-git clone git@github.com:beammedown/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone git@github.com:beammedown/mynvim.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 ### Postinstallation
