@@ -6,6 +6,7 @@ return {
     'leoluz/nvim-dap-go',
     'mfussenegger/nvim-dap-python',
   },
+  lazy = true,
   config = function()
     local dap = require 'dap'
     local dapui = require 'dapui'

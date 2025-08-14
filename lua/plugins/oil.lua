@@ -22,7 +22,7 @@ return {
         signcolumn = 'yes:2',
       },
       view_options = {
-        show_hidden = true,
+        show_hidden = false,
       },
     },
 
