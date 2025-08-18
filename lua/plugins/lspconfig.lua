@@ -349,6 +349,7 @@ return {
   },
   { -- Autoformat
     'stevearc/conform.nvim',
+    dependencies = { 'zapling/mason-conform.nvim' },
     event = { 'BufWritePre' },
     cmd = { 'ConformInfo' },
     keys = {
