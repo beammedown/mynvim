@@ -1,0 +1,13 @@
+{
+  "Return Json": {
+    "prefix": "rj",
+    "body": [
+      "return c.Status($1).JSON(fiber.Map{",
+      "\t\"code\":    $1,",
+      "\t\"message\": \"$2\",",
+      "\t\"data\":    nil,",
+      "})",
+      "$0"
+    ]
+  }
+}
