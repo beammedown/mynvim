@@ -384,7 +384,7 @@ return {
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
 
         -- Conform can also run multiple formatters sequentially
-        python = { 'isort', 'black' },
+        python = { 'ruff', 'isort', 'black', stop_after_first = true },
       },
     },
   },
