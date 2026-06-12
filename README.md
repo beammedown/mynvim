@@ -1,6 +1,6 @@
 # Neovim Config
 
-This is my personal Neovim config. I don't think it needs more explenation
+This is my personal Neovim config. I don't think it needs more explenation...
 
 ## Requirements
 
